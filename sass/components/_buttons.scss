@@ -1,5 +1,5 @@
 .btn{
-    
+        &,
         &:link,
         &:visited {
             text-transform: uppercase;
@@ -12,6 +12,10 @@
             animation-name: moveBtbUp;
             animation-duration: 2s;
             font-size: 1.6rem;
+
+            //change to the button element
+            border: none;
+            cursor: pointer;
         }
     
         &--white{
@@ -43,8 +47,13 @@
         }
         
         &:active {
+            outline: none;
             transform: translateY(-.1rem);
             box-shadow: 0 .5rem 1rem rgba($color-black, 0.2);
+        }
+
+        &:focus {
+            outline: none;
         }
         
         &::after {
