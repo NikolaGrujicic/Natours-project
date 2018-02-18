@@ -25,21 +25,11 @@
         opacity: 0;
         transform: translate(-50%,-50%) scale(.25);
         transition: all .5s .2s;
-
-        @include respond(tab-port) {
-            display: inline-block;
-        }
     }
 
     &_left {
         width: 33.33333%;
         display: table-cell;
-
-        @include respond(tab-port) {
-            display: inline-block;
-            width: 100%;
-            margin: 5px;
-        }
     }
 
     &_right {
@@ -47,20 +37,12 @@
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
-
-        @include respond(tab-port) {
-            display: inline-block;
-            width: 100%;
-        }
     }
 
     &_img {
         display: block;
         width: 100%;
-        @include respond(tab-port) {
-            display: inline-block;
-            width: 49%;
-        }
+
     }
 
     &_text {
